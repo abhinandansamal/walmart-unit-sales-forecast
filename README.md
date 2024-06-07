@@ -128,9 +128,9 @@ cd walmart-sales-forecasting
 
 2. Download the data:
 
-• Download the required raw data files from this [Google Drive](https://drive.google.com/drive/folders/1eXjXk48Zlt52aPlDqACMkdDkEAnlUgGT?usp=sharing) link and place them in the data/raw/ directory. As most of the files are > 50 MB, so they are not uploaded in the repository.
+    • Download the required raw data files from this [Google Drive](https://drive.google.com/drive/folders/1eXjXk48Zlt52aPlDqACMkdDkEAnlUgGT?usp=sharing) link and place them in the data/raw/ directory. As most of the files are > 50 MB, so they are not uploaded in the repository.
 
-• Alternatively, you can download the complete dataset from [Kaggle](https://www.kaggle.com/competitions/m5-forecasting-accuracy/data) here.
+    • Alternatively, you can download the complete dataset from [Kaggle](https://www.kaggle.com/competitions/m5-forecasting-accuracy/data) here.
 
 3. Create the Conda Environment
 

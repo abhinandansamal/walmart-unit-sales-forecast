@@ -12,10 +12,6 @@ Forecasting sales at the item-store level can significantly impact inventory man
 
 The model's performance is evaluated using the Weighted Root Mean Squared Scaled Error (RMSSE). The primary objective is to minimize this error metric.
 
-## Submission Format
-
-Each row in the submission file contains an id that is a concatenation of an item_id and a store_id, ending with either validation (for the Public leaderboard) or evaluation (for the Private leaderboard). You are predicting 28 forecast days (F1-F28) of items sold for each row.
-
 ## Dataset Description
 
 • **calendar.csv:** Contains information about the dates on which the products are sold.

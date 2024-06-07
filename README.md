@@ -96,8 +96,31 @@ walmart-unit-sales-forecast/
 └── requirements.txt (optional, if needed for pip packages only)
 ```
 
-## Setup and Installation
-### Using Conda
+• `data/raw/`: Contains the raw input files (sales data, product prices, etc.).
+
+• `data/processed/`: Contains processed data files (these will be generated during the execution).
+
+• `models/`: Contains saved model files.
+
+• `notebooks/`: Contains Jupyter notebooks for exploratory data analysis and model development.
+
+• `src/`: Contains the source code for data preparation, feature engineering, model training, and evaluation.
+
+• `submissions/`: Contains the submission files for the competition.
+
+
+## Setup Instructions
+
+### Prerequisites
+
+• Python 3.10.12
+
+• Anaconda installed
+
+• Git installed
+
+
+### Setup Using Conda
 
 1. Clone the Repository
 
@@ -106,7 +129,13 @@ git clone https://github.com/abhinandansamal/walmart-unit-sales-forecast.git
 cd walmart-sales-forecasting
 ```
 
-2. Create the Conda Environment
+2. Download the data:
+
+• Download the required raw data files from this [Google Drive](https://drive.google.com/drive/folders/1eXjXk48Zlt52aPlDqACMkdDkEAnlUgGT?usp=sharing) link and place them in the data/raw/ directory. As most of the files are > 50 MB, so they are not uploaded in the repository.
+
+• Alternatively, you can download the complete dataset from [Kaggle](https://www.kaggle.com/competitions/m5-forecasting-accuracy/data) here.
+
+3. Create the Conda Environment
 
 ```bash
 conda env create -f environment.yml
@@ -123,6 +152,14 @@ conda activate walmart_sales_forecasting
 ```bash
 python main.py
 ```
+
+### Important Notes
+
+• The processed data files (eval.pkl, future.pkl, val.pkl) will be generated during the execution of main.py. These files are required for the model to make predictions and will stored in the data/processed/ directory. As the file sizes are > 50 MB, so they are not uploaded in the repository. 
+
+• Due to the high RAM requirements for executing this project, it is advisable to run the Jupyter notebook (walmart_unit_sales_forecast.ipynb located in the notebooks/ folder) on a cloud platform or Google Colab with the high RAM option enabled. Alternatively, use a local system with sufficient memory.
+
+• If running the Jupyter notebook in Google Colab, you can upload the raw data files to the Colab environment and adjust the file paths accordingly.
 
 ## Notable Enhancements
 
@@ -156,7 +193,7 @@ This notebook demonstrates the process of forecasting sales using historical dat
 
 ## Acknowledgments
 
-• This project is based on data provided by Walmart.
+• This project is based on data provided by UNIVERSITY OF NICOSIA and is available on Kaggle.
 
 • Special thanks to the developers of Prophet and the Python community for their support and contributions to the libraries used in this project.
 

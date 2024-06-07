@@ -89,6 +89,7 @@ walmart-unit-sales-forecast/
 ├── environment.yml
 ├── README.md
 ├── LICENSE
+├── setup.py
 └── requirements.txt (optional, if needed for pip packages only)
 ```
 
